@@ -1,0 +1,37 @@
+{
+  "name": "shopify-express-app",
+  "version": "0.0.0",
+  "type": "module",
+  "author": "glenndimaano",
+  "license": "MIT",
+  "scripts": {
+    "ngrok": "ngrok http 5173",
+    "update": "node utils/update.js",
+    "check": "node utils/check.js",
+    "build": "vite build",
+    "dev": "NODE_ENV=development nodemon -r dotenv/config server/main.js -w server",
+    "start": "NODE_ENV=production node -r dotenv/config server/main.js"
+  },
+  "dependencies": {
+    "@shopify/app-bridge": "^3.7.4",
+    "@shopify/app-bridge-react": "^3.7.4",
+    "@shopify/polaris": "^10.38.0",
+    "@shopify/shopify-app-express": "^1.2.2",
+    "@shopify/shopify-app-session-storage-mongodb": "^1.0.5",
+    "express": "^4.18.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-query": "^3.39.3",
+    "react-router-dom": "^6.9.0",
+    "vite-express": "^0.5.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.0",
+    "@shopify/cli-kit": "^3.44.1",
+    "@vitejs/plugin-react": "^3.1.0",
+    "dotenv": "^16.0.3",
+    "ngrok": "^4.3.3",
+    "nodemon": "^2.0.21",
+    "vite": "^4.2.1"
+  }
+}

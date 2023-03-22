@@ -1,0 +1,4 @@
+type="backend"
+
+auth_callback_path = ["/api/auth", "/api/auth/callback", "shopify/api/auth", "/shopify/auth/callback"]
+webhooks_path = "/api/webhooks"
